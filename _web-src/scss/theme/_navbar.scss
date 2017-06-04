@@ -4,10 +4,10 @@
   transition: height .5s;
 
   @include media-breakpoint-up(lg) {
-    height: 5rem;
+    height: 0rem;
   }
 
-  background: $theme-color-main;
+  //background: $theme-color-main;
 
   // Element: navbar-logo
 
@@ -30,7 +30,8 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: $border-radius-sm;
-    background-color: $theme-color-main;
+    //background-color: $theme-color-main;
+    background-color: red;
     transition: background-color 0.3s ease;
 
     &:hover {

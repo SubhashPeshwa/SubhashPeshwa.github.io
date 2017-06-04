@@ -1,11 +1,13 @@
 // Block: container-top
 
 .container-top {
-  display: block;
-  padding-top: 4rem;
-  background-color: $theme-color-main;
-  text-align: center;
-  position: relative;
+  //display: block;
+  //padding-top: 4rem;
+  //background: url('./web-dist/images/profile-image.jpg') no-repeat fixed;
+  //background-size: cover;
+  //min-height: 630px;
+  //text-align: center;
+  //position: relative;
 
   @include media-breakpoint-up(lg) {
     padding-top: 7rem;
