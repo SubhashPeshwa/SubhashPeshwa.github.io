@@ -23,6 +23,8 @@
     bottom: auto;
   }
 
+  .carousel-indicators li { visibility: hidden; }
+
   @media only screen and (max-width: 480px) {
     .carousel-inner img {
     -webkit-filter: grayscale(90%);
@@ -59,25 +61,33 @@
 
   &-name {
     @extend .theme-font;
-    font-size: 2.5rem;
+    font-size: 7.5rem;
     padding-top: $spacer / 2;
     color: darken($theme-color-main, 50%);
 
     @include media-breakpoint-up(lg) {
       padding-top: $spacer;
-      font-size: 4rem;
+      font-size: 7rem;
     }
+    @media only screen and (max-width: 480px) {
+      padding-top: $spacer;
+      font-size: 3rem;
+  }
   }
 
   // Element: container-top-headline
 
   &-headline {
-    font-size: 1.5rem;
+    font-size: 5.5rem;
     margin: 1rem;
     color: darken($theme-color-main, 50%);
 
     @include media-breakpoint-up(lg) {
-      font-size: 2rem;
+      font-size: 4rem;
     }
+    @media only screen and (max-width: 480px) {
+      padding-top: $spacer;
+      font-size: 2rem;
+  }
   }
 }
