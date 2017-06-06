@@ -1,9 +1,9 @@
 # Site settings
 # in the templates available like {{ site.myvariable }}.
-title: Alpine Homes - Bed and Breakfast
+title: Alpine Homes Bed and Breakfast
 email: rashim.dhir@gmail.com
-brand: Alpine Homes - Bed and Breakfast
-headline: 
+brand: Alpine Homes 
+headline: Bed and Breakfast
 description: > # this means to ignore newlines until "baseurl:"
   New Site
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -23,3 +23,4 @@ phone: +91 9999999999
 # Tracking
 googleAnalitycsID: UA-83933844-1
 
+exclude: [node_modules]
