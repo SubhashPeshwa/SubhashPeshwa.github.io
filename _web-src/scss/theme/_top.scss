@@ -2,59 +2,21 @@
 
 .container-top {
   display: block;
-  //padding-top: 4rem;
-  //background-color: $theme-color-main;
-  //background-image : url("/web-dist/images/StockSnap_398D5R5P5L.jpg");
-  //background-size: 2200px 1200px;
-  //height: 1200px;
-  text-align: center;
-  position: relative;
+  padding-top: 4rem;
+  background-color: $theme-color-main;
+  background-image : url("/web-dist/images/StockSnap_UQ65U0QKL2-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center; 
+  width: 100%; /* Set width to 100% */
 
-  .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
-    width: 100%; /* Set width to 100% */
-    height: 1300px;
-    margin: auto;
-  }
-
-  .carousel-caption {
-    top: 60px;
-    bottom: auto;
-  }
-
-  .carousel-indicators li { visibility: hidden; }
 
   @media only screen and (max-width: 480px) {
-    .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
-    width: 100%; /* Set width to 100% */
-    height: 400px;
-    margin: auto;
-  }
 }
 
   @include media-breakpoint-up(lg) {
-    //padding-top: 7rem;
-  }
-
-  // Element: container-top-image
-
-  &-image {
-    width: 220px;
-    height: 220px;
-    transition: all .3s;
-
-    &:hover {
-      filter: brightness(1.1);
-      -webkit-filter: brightness(1.1);
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: 320px;
-      height: 320px;
-    }
+    padding-top: 7rem;
   }
 
   // Element: container-top-name
