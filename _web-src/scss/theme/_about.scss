@@ -1,5 +1,22 @@
 // Block: container-about
-
 .container-about {
   margin-top: $spacer;
+  .slideanim {
+    visibility: hidden;
+  }
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .glyphicon {
+    font-size:100px;
+    padding-bottom: 50px;
+    padding-top: 50px
+  }
+  .description{
+    color: #0e3054;
+  }
 }
