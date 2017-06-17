@@ -1,16 +1,57 @@
+<script>
+    new WOW().init();
+
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="
     margin: 0;
     padding: 0;
     height: 50px;
+    opacity: 0.8;
 ">
     <div class="navbar-brand hidden-xs-down navbar-logo" href="/">Alpine Homes</div>
-    <button class="navbar-toggler hidden-sm-up collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#CollapsingNavbar"
-            aria-controls="CollapsingNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+    <button class="navbar-toggler hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#CollapsingNavbar"
+        aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
     </button>
     <div class="navbar-brand navbar-brand--mobile hidden-sm-up navbar-logo" href="/">Alpine Homes</div>
@@ -29,9 +70,6 @@
                 <div class="nav-link" data-link=".container-reviews">Our Reviews</div>
             </li>
             <li class="nav-item">
-                <div class="nav-link" data-link=".container-reviews">Social Corner</div>
-            </li>
-	    <li class="nav-item">
                 <div class="nav-link" data-link=".container-contacts">Contact Us</div>
             </li>
         </ul>

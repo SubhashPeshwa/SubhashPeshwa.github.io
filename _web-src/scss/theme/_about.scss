@@ -4,6 +4,50 @@
   .slideanim {
     visibility: hidden;
   }
+  .overlap {
+    margin-top: -180px;
+  }
+
+  .page-header {
+    //border-bottom: 1px solid #eee;
+    border-bottom: 0px;
+}
+
+  @media only screen and (max-width: 500px) {
+    .overlap {
+      margin-top: -235px;
+    }
+  }
+  .InteriorImage {
+    background-color: $theme-color-main;
+    background-image: url("/web-dist/images/ExteriorBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
+    text-align: center;
+    width: 100%;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    margin-top:30px;
+    margin-bottom: 60px;
+  }
+  .ExteriorImage {
+    background-color: $theme-color-main;
+    background-image: url("/web-dist/images/InteriorBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
+    text-align: center;
+    width: 100%;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    margin-top:60px;
+    margin-bottom: 30px;
+  }
   .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -12,11 +56,24 @@
     visibility: visible;
   }
   .glyphicon {
-    font-size:100px;
+    font-size: 100px;
     padding-bottom: 50px;
     padding-top: 50px
   }
-  .description{
+  .description {
     color: #0e3054;
+  }
+  .jumbotron {
+    border-radius: 0px;
+  }
+  .verticalLine {
+    border-left: thick solid #fc9220;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .darktheme {
+    background-color: #0e3054;
+    color: white;
   }
 }
