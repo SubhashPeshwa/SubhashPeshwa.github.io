@@ -7,20 +7,22 @@
   .overlap {
     margin-top: -180px;
   }
-
-  .fixedHeight{
-    height:250px;
-    
-    .fixedHeight i{
+  .carousel-indicators li { visibility: hidden; }
+  .window {
+    height: 350px;
+    width: 400px;
+    text-align: center;
+  }
+  .fixedHeight {
+    height: 250px;
+    .fixedHeight i {
       vertical-align: middle;
     }
   }
-
   .page-header {
     //border-bottom: 1px solid #eee;
     border-bottom: 0px;
-}
-
+  }
   @media only screen and (max-width: 500px) {
     .overlap {
       margin-top: -235px;
@@ -38,13 +40,13 @@
     background-attachment: fixed;
     /* Center the background image */
     background-position: center;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 60px;
-    color:#0e3054;
+    color: #0e3054;
     font-family: 'Lobster', cursive;
     font-size: 2.6rem;
   }
-  .InteriorImage span{
+  .InteriorImage span {
     background-color: #0e3054;
   }
   .ExteriorImage {
@@ -59,13 +61,13 @@
     background-attachment: fixed;
     /* Center the background image */
     background-position: center;
-    margin-top:60px;
+    margin-top: 60px;
     margin-bottom: 30px;
     font-family: 'Lobster', cursive;
-    color:#0e3054;
+    color: #0e3054;
     font-size: 2.6rem;
   }
-  .ExteriorImage span{
+  .ExteriorImage span {
     background-color: #fc9220;
   }
   .slide {
@@ -96,8 +98,7 @@
     background-color: #7a7e82;
     color: white;
   }
-
-  .lightHeight{
+  .lightHeight {
     background-color: #eee;
   }
 }
