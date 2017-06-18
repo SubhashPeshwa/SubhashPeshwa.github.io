@@ -7,7 +7,7 @@
     height: 5rem;
   }
 
-  background: $theme-color-main;
+  background: #0e3054;
 
   // Element: navbar-logo
 
@@ -30,14 +30,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: $border-radius-sm;
-    background-color: $theme-color-main;
+    background-color: #0e3054;
     transition: background-color 0.3s ease;
 
     &:hover {
       background: $theme-color-main-contrast;
 
       & > .nav-link {
-        color: $theme-color-main;
+        color: #0e3054;
       }
     }
 
