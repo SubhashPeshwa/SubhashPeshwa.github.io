@@ -1,11 +1,19 @@
 // Block: container-about
 .container-about {
-  margin-top: $spacer;
+  //margin-top: $spacer;
   .slideanim {
     visibility: hidden;
   }
   .overlap {
     margin-top: -180px;
+  }
+
+  .fixedHeight{
+    height:250px;
+    
+    .fixedHeight i{
+      vertical-align: middle;
+    }
   }
 
   .page-header {
@@ -22,7 +30,7 @@
     background-color: $theme-color-main;
     background-image: url("/web-dist/images/ExteriorBanner.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 60vh;
     text-align: center;
     width: 100%;
@@ -32,12 +40,18 @@
     background-position: center;
     margin-top:30px;
     margin-bottom: 60px;
+    color:#0e3054;
+    font-family: 'Lobster', cursive;
+    font-size: 2.6rem;
+  }
+  .InteriorImage span{
+    background-color: #0e3054;
   }
   .ExteriorImage {
     background-color: $theme-color-main;
     background-image: url("/web-dist/images/InteriorBanner.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 60vh;
     text-align: center;
     width: 100%;
@@ -47,6 +61,12 @@
     background-position: center;
     margin-top:60px;
     margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    color:#0e3054;
+    font-size: 2.6rem;
+  }
+  .ExteriorImage span{
+    background-color: #fc9220;
   }
   .slide {
     animation-name: slide;
@@ -67,13 +87,17 @@
     border-radius: 0px;
   }
   .verticalLine {
-    border-left: thick solid #fc9220;
+    border-left: thick solid #0e3054;
     padding: 20px;
     margin-left: 40px;
     margin-right: 40px;
   }
   .darktheme {
-    background-color: #0e3054;
+    background-color: #7a7e82;
     color: white;
+  }
+
+  .lightHeight{
+    background-color: #eee;
   }
 }

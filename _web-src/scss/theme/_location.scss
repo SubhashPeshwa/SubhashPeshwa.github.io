@@ -1,0 +1,15 @@
+.container-location {
+    .divideline {
+        width: 49%;
+        width: calc(50% - 1px);
+        border-right: 0px solid #76A5AF;
+        display: block;
+        height: 70px;
+    }
+    .feature-icon-container {
+        text-align: center;
+    }
+    .glyphicon {
+        font-size: 80px;
+    }
+}
