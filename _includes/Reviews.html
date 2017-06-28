@@ -1,16 +1,43 @@
-<section class="container container-reviews">
+<section class="container-fluid container-reviews">
     <div class="row">
-        <div class="col-md-12" align = center>
-            <h2 style='border:2px #79AFE8 solid; border-radius: 8px; padding:10px'>Reviews</h2>
-        </div>
-        <div align=center>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est diam, porttitor et arcu at, vehicula
-                sodales libero. Sed fermentum luctus dapibus. Proin lobortis ipsum eu lobortis luctus.
-                Donec elementum orci dui, eu euismod sem pellentesque sit amet. Nunc tempus consequat urna, vel
-                consectetur odio mattis id. Nam nisi sem, tincidunt id risus et, auctor lacinia nulla. In hac habitasse
-                platea dictumst.
-            </p>
+
+        <div class="jumbotron" style="background-color:white; color:#79AFE8">
+            <div class="page-header">
+                <p class="titletext" style="font-size:3rem;text-align:center">Reviews
+                </p>
+            </div>
+
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
