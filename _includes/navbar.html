@@ -1,4 +1,5 @@
 <script>
+    console.log('Scrip initiated');
     new WOW().init();
 
     function openModal() {
@@ -41,6 +42,12 @@
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
     }
+
+    function getDatePicker(){
+        console.log('DatePicker called');
+        daterangepicker();
+    }
+
 </script>
 
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="
