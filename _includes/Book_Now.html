@@ -11,21 +11,21 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="usr">Name</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="name">
                 </div>
                 <div class="form-group">
                     <label for="usr">Email</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="email">
                 </div>
                 <div class="form-group">
-                    <label for="usr">Mobile</label>
-                    <input type="text" class="form-control" id="usr">
+                    <label for="usr" id="name">Mobile</label>
+                    <input type="text" class="form-control" id="mobile">
                 </div>
                 <!--<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" onclick="getDatePicker();"/>-->
                 <div class="form-group">
                     <label for="usr">Check-in</label>
-                    <div class='input-group date' id='datetimepicker1' onclick="daterangepicker()">
-                        <input type='text' class="form-control" />
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" id="check-in" />
                         <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -33,8 +33,8 @@
                 </div>
                 <div class="form-group">
                     <label for="usr">Check-out</label>
-                    <div class='input-group date' id='datetimepicker1' onclick="daterangepicker()">
-                        <input type='text' class="form-control" />
+                    <div class='input-group date' id='datetimepicker1' onclick="getDatePicker();">
+                        <input type='text' class="form-control" id="check-out" />
                         <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -42,20 +42,41 @@
                 </div>
                 <div class="form-group">
                     <label for="usr">Adults</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="Adults">
                 </div>
                 <div class="form-group">
                     <label for="usr">Kids</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="Kids">
                 </div>
                 <div class="form-group">
                     <label for="usr">Room</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="Rooms">
                 </div>
                 <div class="form-group">
                     <label for="usr">Comment</label>
-                    <input type="text" class="form-control" id="usr">
+                    <input type="text" class="form-control" id="Comment">
                 </div>
+                <button type="button" class="btn" id="enquireButton">Basic</button>
+            </div>
+            <div class="col-sm-6">
+                <p>
+                    Your call will be received by our concerned team and a mail will be sent to you within 20 minutes about the availability
+                    of accommodation. All required details will be mentioned in the mail.<br><br> To
+                    confirm your booking, please send us an email for our account details and kindly deposit 50% or the total
+                    estimated amount into our account and send us a snapshot of the online transfer.<br><br> Once the booking
+                    has been made please adhere to these rules to make the process hassle free.<br>
+                    <ul>
+                        <li>The booking date cannot be postponed if the date of booking is within a week.</li>
+                        <li> The balance amount has to be paid before the check-out.</li>
+                        <li> Credit cards, debit cards and cheques are not accepted at Saalugudda homestay </li>.</ul>
+                    <h3>CANCELLATION PROCESS</h3><br> If cancelled within 10 days of the check-in date 25% of the advance amount
+                    will be deducted. Above 10 days from the booking date only Rs 500 will be deducted from the advance amount.
+                    If cancelled within 7 days of check-in, there will be absolutely no refund given. <br><br>
+                    <h3>PAYMENT MODE</h3><br> A minimum of 50% of the estimated amount has to be deposited into our account or
+                    you can also transfer the full amount before check-in or by cash before you check-out.
+
+
+                </p>
             </div>
             <!-- Change the width and height values to suit you best -->
             <!--<div class="typeform-widget" data-url="https://subhash20.typeform.com/to/HkW6p0" data-text="HotelBooking" style="width:100%;height:500px;"></div>

@@ -1,12 +1,23 @@
 $(document).ready(function () {
 
+
     // Selecting some DOM elements for further handling
 
     var dom = {
         window: $(window),
         body: $('body'),
         navItem: $('.nav-item'),
-        navBarLogo: $('.navbar-logo')
+        navBarLogo: $('.navbar-logo'),
+        customerName: $('#name'),
+        customerEmail: $('#email'),
+        customerMobile: $('#mobile'),
+        customerCheckIn: $('#check-in'),
+        customerCheckOut: $('#check-out'),
+        customerAdults: $('#Adults'),
+        customerKids: $('#Kids'),
+        customerRooms: $('#Rooms'),
+        customerComments: $('#Comments'),
+        enquireButton: $('#enquireButton')
     };
 
     // Handling the navigation links
@@ -37,6 +48,19 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 300);
+    });
+
+    dom.enquireButton.click(function () {
+        console.log(dom.customerName[0].value);
+        console.log(dom.customerEmail[0].value);
+        console.log(dom.customerMobile[0].value);
+        console.log(dom.customerCheckIn[0].value);
+        console.log(dom.customerCheckOut[0].value);
+        console.log(dom.customerAdults[0].value);
+        console.log(dom.customerKids[0].value);
+        console.log(dom.customerRooms[0].value);
+        console.log(dom.customerComments[0].value);
+        
     });
 
     // Promo stuff
