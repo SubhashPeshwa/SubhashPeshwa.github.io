@@ -1,5 +1,6 @@
 // Block: container-about
 .container-about {
+  font-family:Lato;
   //margin-top: $spacer;
   .slideanim {
     visibility: hidden;
@@ -27,6 +28,11 @@
     .overlap {
       margin-top: -235px;
     }
+    .window {
+    height: 330px;
+    width: 340px;
+    text-align: center;
+  }
   }
   .InteriorImage {
     background-color: $theme-color-main;
@@ -145,6 +151,14 @@
 }
 .roomTypeLogo{
   float:left;
+  margin-right: 0.6em;
+}
+.amenitiesList{
+  padding:3px;
+}
+.material-icons{
+  float:left;
+  font-size: 20px;
   margin-right: 0.4em;
 }
 }
