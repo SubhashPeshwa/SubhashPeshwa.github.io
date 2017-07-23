@@ -123,6 +123,7 @@
   }
   .lightHeight {
     background-color: #eee;
+    color: #0e3054;
   }
 
   .flip-container {
@@ -175,8 +176,14 @@
 }
 .material-icons{
   float:left;
-  font-size: 20px;
+  font-size: 17px;
   margin-right: 0.4em;
+}
+.nameTag{
+  height:3.2em;
+}
+.locationText{
+  margin-top:0.8em;
 }
 
 }
