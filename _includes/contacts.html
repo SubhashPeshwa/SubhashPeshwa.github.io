@@ -1,39 +1,37 @@
 <footer class="container-fluid container-contacts">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron" style="background-color:#0e3054; color:white; padding:0px;">
-                    <div class="page-header">
-                        <p class="titletext" style="font-size:3rem; text-align:center; font-family: 'Lobster', cursive; color:white">Get in Touch
-                        </p>
-                    </div>
+            <div class="jumbotron" style="color:white; padding:0px; background-color:transparent !important">
+                <div class="page-header">
+                    <p class="titletext" style="font-size:4rem; text-align:center; font-family: Raleway; font-weight:bold; color:white">Get in Touch
+                    </p>
                 </div>
-                <div class="col-md-6" style="color:white">
-                    <i class="fa fa-map-marker" style="float:left; "></i>
-                    <div style="margin-left:1em; font-size:13px">
-                        <div><b>ALPINE HOMES</b></div>
-                        <div>Dhir Niwas</div>Chakkar - Boileauganj Bypass Rd<br/>Sandal, Chakkar<br/>Shimla - 171005<br>Himachal
-                        Pradesh, India<br><br>
+            </div>
+            <div class="col-md-8" style="float:right; padding-right:0px">
+                <div class="mapFrame" style="margin-bottom:4em">
+                    <div class="locationCard" style="color:#6457A6;background-color:white">
+                        <i class="fa fa-map-marker" style="float:left; margin-left:0.8em; margin-top:1.2em;font-size:1.4rem; color:#7D7ABC"></i>
+                        <div style="margin-left:3.4em; margin-top:2em; font-size:13px;">
+                            <div><b>ALPINE HOMES</b></div>
+                            <div>Dhir Niwas</div>Chakkar - Boileauganj Bypass Rd<br/>Sandal, Chakkar<br/>Shimla - 171005, Himachal
+                            Pradesh, India<br>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope" aria-hidden="true" style="margin-left:1em;"></i>
+                            <a href="mailto:{{ site.email }}" style="font-size:13px; color:#6457A6; margin-left:0.6em; margin-top:2em;">
+                                {{ site.email }}<br>
+                            </a>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true" style="margin-left:1em;"></i>
+                            <a href="tel:{{ site.phone }}" style="font-size:13px; color:#6457A6; margin-left:0.6em; margin-top:2em;">
+                                {{ site.phone }}
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:{{ site.email }}" style="font-size:13px; color:white">
-                    {{ site.email }}<br><br>
-                </a>
-                    </div>
-                    <div>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel:{{ site.phone }}" style="font-size:13px; color:white">
-                    {{ site.phone }}
-                </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <!--<iframe width="600" height="450" frameborder="0" style="border:0; padding:10px" src="https://www.google.com/maps/embed/v1/place?q=alpine%20homes%20chakker&key=AIzaSyAfDvsBnjpXY_u9hUYQTStnsNkuxKwxdxs" allowfullscreen></iframe>-->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13666.346156882119!2d77.135312!3d31.093426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5957964586c99cd6!2sAlpine+Homes!5e0!3m2!1sen!2sin!4v1494994560727"
-                            width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                    <!--<iframe width="600" height="450" frameborder="0" style="border:0; padding:10px" src="https://www.google.com/maps/embed/v1/place?q=alpine%20homes%20chakker&key=AIzaSyAfDvsBnjpXY_u9hUYQTStnsNkuxKwxdxs" allowfullscreen></iframe>-->
+                    <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13666.346156882119!2d77.135312!3d31.093426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5957964586c99cd6!2sAlpine+Homes!5e0!3m2!1sen!2sin!4v1494994560727"
+                        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
