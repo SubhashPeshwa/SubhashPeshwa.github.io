@@ -2,11 +2,12 @@
 .container-top {
   display: block;
   padding-top: 4rem;
+  margin-top:4rem;
   background-color: $theme-color-main;
-  background-image: url("/web-dist/images/StockSnap_UQ65U0QKL2-min.jpg");
+  background-image: url("/web-dist/images/MainBanner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   text-align: center;
   width: 100%;
   /* Set background image to fixed (don't scroll along with the page) */
@@ -22,7 +23,7 @@
     @extend .theme-font;
     font-size: 7.5rem;
     padding-top: $spacer / 2;
-    color: darken($theme-color-main, 50%);
+    color: #3c3c3c;
     @include media-breakpoint-up(lg) {
       padding-top: $spacer;
       font-size: 7rem;
@@ -35,7 +36,7 @@
   &-headline {
     font-size: 5.5rem;
     margin: 1rem;
-    color: darken($theme-color-main, 50%);
+    color: #3c3c3c;
     @include media-breakpoint-up(lg) {
       font-size: 4rem;
     }

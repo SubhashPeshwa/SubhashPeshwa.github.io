@@ -6,14 +6,17 @@
   @include media-breakpoint-up(lg) {
     height: 5rem;
   }
+  #CollapsingNavbar{
+    background-color: #3c3c3c;
+  }
 
-  background: #0e3054;
+  background: white;
 
   // Element: navbar-logo
 
   &-logo {
     @extend .theme-font;
-    color: $theme-color-main-contrast;
+    color: #ef767a;
     cursor: pointer;
     opacity: 0;
     transition: opacity .5s;
@@ -30,14 +33,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: $border-radius-sm;
-    background-color: #0e3054;
+    background-color: #3c3c3c;
     transition: background-color 0.3s ease;
 
     &:hover {
       background: $theme-color-main-contrast;
 
       & > .nav-link {
-        color: #0e3054;
+        color: #3c3c3c;
       }
     }
 

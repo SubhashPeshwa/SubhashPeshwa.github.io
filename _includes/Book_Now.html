@@ -10,28 +10,128 @@
             </div>
             <img class="center-block flowHorizontalImage" src="./web-dist/images/alpine.png">
             <img class="center-block flowVerticalImage" src="./web-dist/images/alpine_vert.png">
-            <div class="col-sm-6">
-                <div class="form-group">
+            <div class="col-md-12">
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Name*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">N</span>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Email*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-at" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Mobile*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-mobile" aria-hidden="true" style="font-size:31px !important"></i>
+                            </span>
+                            <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Check-in*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <input type='date' class="form-control" id="check-in" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Check-out*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <input type='date' class="form-control" id="check-in" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Adults*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-users" aria-hidden="true" style="font-size:14px !important"></i>
+                            </span>
+                            <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Kids*</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-child" aria-hidden="true" style="font-size:21px !important"></i>
+                            </span>
+                            <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Room**</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label col-sm-3">Comment</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!--<div class="form-group">
                     <label for="usr" style="font-size:1.2rem">Name*</label>
                     <input type="text" class="form-control" id="name">
                 </div>
                 <div class="form-group">
                     <label for="usr" style="font-size:1.2rem">Email*</label>
+                    <span class="input-group-addon">@</span>
                     <input type="text" class="form-control" id="email">
                 </div>
                 <div class="form-group">
                     <label for="usr" id="name" style="font-size:1.2rem">Mobile*</label>
                     <input type="text" class="form-control" id="mobile">
-                </div>
-                <!--<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" onclick="getDatePicker();"/>-->
-                <div class="form-group">
-                    <label for="usr" style="font-size:1.2rem">Check-in*</label>
-                    <input type='date' class="form-control" id="check-in" />
-                </div>
-                <div class="form-group">
-                    <label for="usr" style="font-size:1.2rem">Check-out*</label>
-                    <input type='date' class="form-control" id="check-out" />
-                </div>
+                </div>-->
+                <!--<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" onclick="getDatePicker();"/>
+
                 <div class="form-group">
                     <label for="usr" style="font-size:1.2rem">Adults*</label>
                     <input type="text" class="form-control" id="Adults">
@@ -47,7 +147,7 @@
                 <div class="form-group">
                     <label for="usr" style="font-size:1.2rem">Comment</label>
                     <input type="text" class="form-control" id="Comment">
-                </div>
+                </div>-->
                 <button type="button" class="btn btn-primary" id="enquireButton" style="width:100%; background-color:#0e3054">Enquire Now!</button>
             </div>
             <div class="col-sm-6">
@@ -65,7 +165,8 @@
                     <li>Accepted Mode of Payments: Internet Banking and Cash Payement.</li>
                     <li>Credit cards, debit cards and cheques are not accepted.</li>
                 </ol><br><br>
-
+            </div>
+            <div class = "col-sm-6">
                 <p style="font-size:2rem; text-align:center; color:#0e3054; font-weight:bold">Cancellation Process</p><br>
                 <ol style="font-size:17px">
                     <li>Before 15 days of the check in date --> Full refund.</li>
