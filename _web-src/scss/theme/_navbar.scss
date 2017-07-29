@@ -42,7 +42,7 @@
     .nav-link {
       color: $theme-color-main-contrast;
       @include media-breakpoint-up(lg) {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 2rem;
       }
     }
