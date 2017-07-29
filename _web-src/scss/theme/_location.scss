@@ -1,31 +1,31 @@
 .container-location {
-    .divideline {
-        width: 49%;
-        width: calc(50% - 1px);
-        border-right: 0px solid #76A5AF;
-        display: block;
-        height: 70px;
-    }
-    .feature-icon-container {
-        text-align: center;
-    }
-    .glyphicon {
-        font-size: 80px;
-    }
-    .page-header {
+  .divideline {
+    width: 49%;
+    width: calc(50% - 1px);
+    border-right: 0px solid #76A5AF;
+    display: block;
+    height: 70px;
+  }
+  .feature-icon-container {
+    text-align: center;
+  }
+  .glyphicon {
+    font-size: 80px;
+  }
+  .page-header {
     //border-bottom: 1px solid #eee;
     border-bottom: 0px;
   }
-
-    font-family:Lato;
-  //margin-top: $spacer;
+  font-family:Lato; //margin-top: $spacer;
   .slideanim {
     visibility: hidden;
   }
   .overlap {
     margin-top: -180px;
   }
-  .carousel-indicators li { visibility: hidden; }
+  .carousel-indicators li {
+    visibility: hidden;
+  }
   .window {
     height: 300px;
     width: 400px;
@@ -33,6 +33,9 @@
   }
   .fixedHeight {
     height: 250px;
+    margin-top: 1.5em;
+    margin-right: 0.5em;
+    padding:0px;
     .fixedHeight i {
       vertical-align: middle;
     }
@@ -46,10 +49,10 @@
       margin-top: -235px;
     }
     .window {
-    height: 330px;
-    width: 340px;
-    text-align: center;
-  }
+      height: 330px;
+      width: 340px;
+      text-align: center;
+    }
   }
   .InteriorImage {
     background-color: $theme-color-main;
@@ -118,72 +121,66 @@
     margin-right: 40px;
   }
   .darktheme {
-    background-color: #7a7e82;
+    background-color: white;
     color: white;
   }
   .lightHeight {
-    background-color: #eee;
+    background-color: white;
+    border-radius: 5px;
     color: #3c3c3c;
   }
-
   .flip-container {
-	perspective: 1000px;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-/*.flip-container, .front, .back {
+    perspective: 1000px;
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+  /*.flip-container, .front, .back {
 	width: 320px;
 	height: 480px;
 }*/
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-.roomTypeLogo{
-  float:left;
-  margin-right: 0.6em;
-}
-.amenitiesList{
-  padding:3px;
-}
-.material-icons{
-  float:left;
-  font-size: 17px;
-  margin-right: 0.4em;
-}
-.nameTag{
-  height:3.2em;
-}
-.locationText{
-  margin-top:0.8em;
-}
-
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  /* hide back of pane during swap */
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+  .roomTypeLogo {
+    float: left;
+    margin-right: 0.6em;
+  }
+  .amenitiesList {
+    padding: 3px;
+  }
+  .material-icons {
+    float: left;
+    font-size: 17px;
+    margin-right: 0.4em;
+  }
+  .nameTag {
+    height: 3.2em;
+  }
+  .locationText {
+    margin-top: 0.8em;
+  }
 }
