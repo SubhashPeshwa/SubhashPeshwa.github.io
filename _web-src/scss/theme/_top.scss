@@ -1,20 +1,12 @@
 // Block: container-top
 .container-top {
   display: block;
-  padding-top: 4rem;
-  margin-top:4rem;
   background-color: $theme-color-main;
-  background-image: url("/web-dist/images/Main.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70vh;
   text-align: center;
-  width: 100%;
   /* Set background image to fixed (don't scroll along with the page) */
   background-attachment: fixed;
   /* Center the background image */
   background-position: center;
-
   @media only screen and (max-width: 480px) {}
   @include media-breakpoint-up(lg) {
     padding-top: 7rem;
@@ -43,6 +35,40 @@
     @media only screen and (max-width: 480px) {
       padding-top: $spacer;
       font-size: 2rem;
+    }
+  }
+  .carousel-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    text-align: center;
+    width: 100%;
+  }
+  .carousel-fade {
+    .carousel-inner {
+      .item {
+        transition-property: opacity;
+      }
+      .item,
+      .active.left,
+      .active.right {
+        opacity: 0;
+      }
+      .active,
+      .next.left,
+      .prev.right {
+        opacity: 1;
+      }
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .carousel-control {
+      z-index: 2;
     }
   }
 }

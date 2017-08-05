@@ -193,16 +193,26 @@
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
   }
-  .form-group{
-    padding:1em;
+  .form-group {
+    padding: 1em;
   }
   .btn-primary {
     border-color: #ef767a !important;
     border-radius: 0px !important;
     margin-top: 1em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
   }
-  .control-label{
-    font-size:0.9em;
+  .control-label {
+    font-size: 0.9em;
+  }
+  .roomType {
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transition: 0.2s linear !important;
+    transition: 0.2s linear !important;
+    -webkit-transition-property: -webkit-transform, all !important;
+    transition-property: transform, all !important;
+    border-left-width: 0px !important;
   }
 }
