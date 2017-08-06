@@ -159,7 +159,7 @@
     margin-right: 0.4em;
   }
   .bookNowBox {
-    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     -webkit-transition: 0.2s linear !important;
@@ -206,7 +206,7 @@
     font-size: 0.9em;
   }
   .roomType {
-    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     -webkit-transition: 0.2s linear !important;
@@ -214,5 +214,8 @@
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
     border-left-width: 0px !important;
+  }
+  .secondColumn{
+    padding-right:5px;
   }
 }
