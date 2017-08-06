@@ -9,15 +9,14 @@
   .feature-icon-container {
     text-align: center;
   }
-  .pinkTheme{
-    background-color: #3c3c3c;
+  .pinkTheme {
+    background-color: #ef767a;
   }
-  .blackTheme{
+  .blackTheme {
     background-color: #3c3c3c;
   }
   .locationCard {
     border-radius: 7px;
-    
     padding: 0px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
@@ -28,9 +27,21 @@
     transition-property: transform, all !important;
     border-left-width: 0px !important;
   }
+  .pinkShadow {
+    box-shadow: 3px 3px 3px 3px rgba(239, 118, 122, 0.4) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transition: 0.2s linear !important;
+    transition: 0.2s linear !important;
+    -webkit-transition-property: -webkit-transform, all !important;
+    transition-property: transform, all !important;
+    border-left-width: 0px !important;
+  }
   .locationImage {
     width: 100%;
-    padding: 1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.4em;
     height: 280px;
   }
   .cardBoundry {
@@ -175,12 +186,12 @@
     text-align: center;
   }
   .locationDescription {
-    background-color: white;
+    background-color: #3c3c3c;
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 0.5em;
+    margin-left: 0.45em;
+    margin-right: 0.45em;
     font-size: 0.9em;
-    color:black;
+    color: white;
+    height: 215px;
   }
 }
