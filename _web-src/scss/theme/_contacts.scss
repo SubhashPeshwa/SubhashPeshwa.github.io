@@ -3,10 +3,10 @@
   margin-top: $spacer;
   padding-top: $spacer;
   min-height: $spacer * 15;
-  background: #7D7ABC;
-  background-image: url("/web-dist/images/banners/mobile2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #3c3c3c;
+  //background-image: url("/web-dist/images/banners/mobile2.jpg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
   color: darken($theme-color-main, 50%); // Element: container-contacts-phone
   // Element: container-contacts-email
   &-phone,
@@ -14,7 +14,7 @@
     font-size: 1.8rem;
     padding: $spacer;
     border-radius: $border-radius;
-    background-color: #7D7ABC;
+    background-color: #3c3c3c;
     transition: background-color 0.3s ease;
     @include media-breakpoint-up(md) {
       font-size: 1.5rem;
