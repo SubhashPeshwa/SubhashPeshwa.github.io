@@ -9,9 +9,15 @@
   .feature-icon-container {
     text-align: center;
   }
+  .pinkTheme{
+    background-color: #ef767a;
+  }
+  .blackTheme{
+    background-color: #3c3c3c;
+  }
   .locationCard {
     border-radius: 7px;
-    background-color: #ef767a;
+    
     padding: 0px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
