@@ -28,7 +28,7 @@
     border-left-width: 0px !important;
   }
   .pinkShadow {
-    box-shadow: 3px 3px 3px 3px rgba(239, 118, 122, 0.4) !important;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     -webkit-transition: 0.2s linear !important;
@@ -50,9 +50,6 @@
   }
   .locationDescription {
     height: 180px;
-  }
-  .glyphicon {
-    font-size: 80px;
   }
   .page-header {
     //border-bottom: 1px solid #eee;
@@ -145,11 +142,6 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
-  .glyphicon {
-    font-size: 100px;
-    padding-bottom: 50px;
-    padding-top: 50px
-  }
   .description {
     color: #3c3c3c;
   }
@@ -193,5 +185,8 @@
     font-size: 0.9em;
     color: white;
     height: 215px;
+  }
+  .glyphicon{
+    color:#3c3c3c;
   }
 }
