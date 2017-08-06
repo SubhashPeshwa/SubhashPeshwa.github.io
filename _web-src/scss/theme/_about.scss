@@ -218,4 +218,24 @@
   .secondColumn{
     padding-right:5px;
   }
+  .modalButton{
+    border:0px !important;
+    padding:0px !important;
+    background-color: white !important;
+    position: relative;
+  }
+  .galleryLink{
+    position: absolute;
+    top:37%;
+    left:28%;
+    border:solid 2px #3c3c3c;
+    color: #3c3c3c;
+    font-size: 1.1em;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }

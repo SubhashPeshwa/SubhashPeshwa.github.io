@@ -9,7 +9,7 @@
                         <label class="control-label col-sm-3">Check-in*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:0.9em">
+                                <span class="input-group-addon" style="padding-right:0.9em">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                             </span>
                                 <input type='date' class="form-control" id="check-in" />
@@ -29,7 +29,7 @@
                         <label class="control-label col-sm-3">Mobile*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"  style="padding-right:1em">
+                                <span class="input-group-addon" style="padding-right:1em">
                                 <i class="fa fa-mobile" aria-hidden="true" style="font-size:31px !important"></i>
                             </span>
                                 <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
@@ -40,7 +40,7 @@
                         <label class="control-label col-sm-3">Adults*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:0.9em">
+                                <span class="input-group-addon" style="padding-right:0.9em">
                                 <i class="fa fa-users" aria-hidden="true" style="font-size:14px !important"></i>
                             </span>
                                 <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
@@ -53,7 +53,7 @@
                         <label class="control-label col-sm-3">Check-out*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:1em">
+                                <span class="input-group-addon" style="padding-right:1em">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                             </span>
                                 <input type='date' class="form-control" id="check-in" />
@@ -64,7 +64,7 @@
                         <label class="control-label col-sm-3">Email*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:1.1em">
+                                <span class="input-group-addon" style="padding-right:1.1em">
                                 <i class="fa fa-at" aria-hidden="true"></i>
                             </span>
                                 <input type="text" class="form-control">
@@ -75,7 +75,7 @@
                         <label class="control-label col-sm-3">Room**</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:1em">
+                                <span class="input-group-addon" style="padding-right:1em">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </span>
                                 <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
@@ -86,7 +86,7 @@
                         <label class="control-label col-sm-3">Kids*</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <span class="input-group-addon"   style="padding-right:1em">
+                                <span class="input-group-addon" style="padding-right:1em">
                                 <i class="fa fa-child" aria-hidden="true" style="font-size:21px !important"></i>
                             </span>
                                 <input type="text" class="form-control" aria-describedby="inputGroupSuccess2Status">
@@ -127,10 +127,15 @@
                         </div>
                         <div class="col-md-12">
                             <div class="col-md-6">
+                                <button type="button" class="btn btn-info btn-lg modalButton" data-toggle="modal" data-target="#myModal">
                                 <img class="center-block" style="width:100%" src="./web-dist/images/Interior/Bed2.jpg">
+                                </button>
                             </div>
                             <div class="col-md-6">
-                                <img class="center-block" style="width:100%" src="./web-dist/images/Exteriors/View4.jpg">
+                                <button type="button" class="btn btn-info btn-lg modalButton" data-toggle="modal" data-target="#myModal">
+                                <img class="center-block" style="width:100%; opacity:0.5" src="./web-dist/images/banners/View4.jpg">
+                                <h3 class="galleryLink">View Gallery</h3>
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-12" style="margin-top:2em">
@@ -253,87 +258,92 @@
                         </div>
                         <div class="col-md-12">
                             <div class="col-md-6">
+                                <button type="button" class="btn btn-info btn-lg modalButton" data-toggle="modal" data-target="#myModal">
                                 <img class="center-block" style="width:100%" src="./web-dist/images/Interior/Bed1.jpg">
+                                </button>
                             </div>
 
                             <div class="col-md-6">
-                                <img class="center-block" style="width:100%" src="./web-dist/images/Interior/Bath1.jpg">
+                                <button type="button" class="btn btn-info btn-lg modalButton" data-toggle="modal" data-target="#myModal">
+                                <img class="center-block" style="width:100%; opacity:0.5" src="./web-dist/images/banners/Bath1.jpg">
+                                <h3 class="galleryLink">View Gallery</h3>
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-12" style="margin-top:1em">
-                        <div class="col-md-6" style="color:#3c3c3c">
-                            <div class="amenitiesList">
-                                <i class="material-icons">weekend</i>
-                                <div>&nbsp;King Size Bed</div>
+                            <div class="col-md-6" style="color:#3c3c3c">
+                                <div class="amenitiesList">
+                                    <i class="material-icons">weekend</i>
+                                    <div>&nbsp;King Size Bed</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-columns roomTypeLogo"></i>
+                                    <div>&nbsp;Wardrobe</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">remove_from_queue</i>
+                                    <div>&nbsp;Flat Screen LED TV</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">hd</i>
+                                    <div>&nbsp;Sattelite Cable Connection</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-wifi roomTypeLogo"></i>
+                                    <div>Wifi</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-bath roomTypeLogo" aria-hidden="true"></i>
+                                    <div>&nbsp;Attached Washroom</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-shower roomTypeLogo"></i>
+                                    <div>Head Shower</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-bitbucket roomTypeLogo"></i>
+                                    <div>&nbsp;&nbsp;Bath Amenities</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-fire roomTypeLogo"></i>
+                                    <div>&nbsp;&nbsp;24 Hours Hot/Cold Water</div>
+                                </div>
                             </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-columns roomTypeLogo"></i>
-                                <div>&nbsp;Wardrobe</div>
+                            <div class="col-md-6 secondColumn" style="color:#3c3c3c;">
+                                <div class="amenitiesList">
+                                    <i class="material-icons">loyalty</i>
+                                    <div>&nbsp;&nbsp;Housekeeping</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">local_parking</i>
+                                    <div>&nbsp;&nbsp;Car Parking</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">business_center</i>
+                                    <div>&nbsp;&nbsp;Cloak Room</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">local_laundry_service</i>
+                                    <div>&nbsp;&nbsp;Iron & Ironing Boards*</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-car roomTypeLogo"></i>
+                                    <div>Transfer and Transport*</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="material-icons">room_service</i>
+                                    <div>&nbsp;Room Service Facility*</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-bed roomTypeLogo"></i>
+                                    <div>Extra Bed*</div>
+                                </div>
+                                <div class="amenitiesList">
+                                    <i class="fa fa-cutlery roomTypeLogo"></i>
+                                    <div>&nbsp;&nbsp;Kitchen*</div>
+                                </div>
+                                <br><br>
                             </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">remove_from_queue</i>
-                                <div>&nbsp;Flat Screen LED TV</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">hd</i>
-                                <div>&nbsp;Sattelite Cable Connection</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-wifi roomTypeLogo"></i>
-                                <div>Wifi</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-bath roomTypeLogo" aria-hidden="true"></i>
-                                <div>&nbsp;Attached Washroom</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-shower roomTypeLogo"></i>
-                                <div>Head Shower</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-bitbucket roomTypeLogo"></i>
-                                <div>&nbsp;&nbsp;Bath Amenities</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-fire roomTypeLogo"></i>
-                                <div>&nbsp;&nbsp;24 Hours Hot/Cold Water</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 secondColumn" style="color:#3c3c3c;">
-                            <div class="amenitiesList">
-                                <i class="material-icons">loyalty</i>
-                                <div>&nbsp;&nbsp;Housekeeping</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">local_parking</i>
-                                <div>&nbsp;&nbsp;Car Parking</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">business_center</i>
-                                <div>&nbsp;&nbsp;Cloak Room</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">local_laundry_service</i>
-                                <div>&nbsp;&nbsp;Iron & Ironing Boards*</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-car roomTypeLogo"></i>
-                                <div>Transfer and Transport*</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="material-icons">room_service</i>
-                                <div>&nbsp;Room Service Facility*</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-bed roomTypeLogo"></i>
-                                <div>Extra Bed*</div>
-                            </div>
-                            <div class="amenitiesList">
-                                <i class="fa fa-cutlery roomTypeLogo"></i>
-                                <div>&nbsp;&nbsp;Kitchen*</div>
-                            </div>
-                            <br><br>
-                        </div>
                         </div>
                         <!--<div class="col-md-4">
                             <div id="myCarouselRooms" class="carousel slide window" data-ride="carousel" align="center" data-interval="3500">
