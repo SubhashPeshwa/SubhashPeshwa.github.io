@@ -135,13 +135,13 @@
   .ExteriorImage span {
     background-color: #fc9220;
   }
-  .slide {
+  /*.slide {
     animation-name: slide;
     -webkit-animation-name: slide;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-  }
+  }*/
   .description {
     color: #3c3c3c;
   }
@@ -186,7 +186,44 @@
     color: white;
     height: 215px;
   }
-  .glyphicon{
-    color:#3c3c3c;
+  .glyphicon {
+    color: #3c3c3c;
+  }
+  .multi-item-carousel {
+    .carousel-inner {
+      >.item {
+        transition: 500ms ease-in-out left;
+      }
+      .active {
+        &.left {
+          left: -33%;
+        }
+        &.right {
+          left: 33%;
+        }
+      }
+      .next {
+        left: 33%;
+      }
+      .prev {
+        left: -33%;
+      }
+      @media all and (transform-3d),
+      (-webkit-transform-3d) {
+        >.item {
+          // use your favourite prefixer here
+          transition: 50ms ease-in-out left;
+          transition: 50ms ease-in-out all;
+          backface-visibility: visible;
+          transform: none!important;
+        }
+      }
+    }
+    .carouse-control {
+      &.left,
+      &.right {
+        background-image: none;
+      }
+    }
   }
 }
