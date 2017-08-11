@@ -167,6 +167,10 @@
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
     border-left-width: 0px !important;
+    text-align: center;
+    margin-top: -2em;
+    background-color: white;
+    margin-bottom: 3em
   }
   .form-control {
     border-radius: 3px;
@@ -215,30 +219,34 @@
     transition-property: transform, all !important;
     border-left-width: 0px !important;
   }
-  .secondColumn{
-    padding-right:5px;
+  .secondColumn {
+    padding-right: 5px;
   }
-  .modalButton{
-    border:0px !important;
-    padding:0px !important;
+  .modalButton {
+    border: 0px !important;
+    padding: 0px !important;
     background-color: white !important;
     position: relative;
   }
-  .galleryLink{
+  .galleryLink {
     position: absolute;
-    top:37%;
-    left:28%;
-    border:solid 2px #3c3c3c;
+    top: 37%;
+    left: 28%;
+    border: solid 2px #3c3c3c;
     color: #3c3c3c;
     font-size: 1.1em;
     font-family: Montserrat;
     letter-spacing: 1px;
-    padding-left:1em;
-    padding-right:1em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
-  a{
-    color:white !important;
+  a {
+    color: white !important;
+  }
+  #enquireButton {
+    width: 20%;
+    background-color: #ef767a
   }
 }
