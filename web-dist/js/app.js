@@ -51,15 +51,19 @@ $(document).ready(function () {
     });
 
     dom.enquireButton.click(function () {
-        console.log(dom.customerName[0].value);
-        console.log(dom.customerEmail[0].value);
-        console.log(dom.customerMobile[0].value);
-        console.log(dom.customerCheckIn[0].value);
-        console.log(dom.customerCheckOut[0].value);
-        console.log(dom.customerAdults[0].value);
-        console.log(dom.customerKids[0].value);
-        console.log(dom.customerRooms[0].value);
-        console.log(dom.customerComments[0].value);
+        console.log(document.getElementById("customerName").value);
+        console.log(document.getElementById("customerEmail").value);
+        console.log(document.getElementById("customerMobile").value);
+        console.log(document.getElementById("customerCheckIn").value);
+        console.log(document.getElementById("customerCheckOut").value);
+        console.log(document.getElementById("customerAdults").value);
+        console.log(document.getElementById("customerKids").value);
+        console.log(document.getElementById("customerRooms").value);
+
+
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test"); // false for synchronous request
+        xmlHttp.send(null);
 
     });
 
@@ -88,4 +92,10 @@ $(document).ready(function () {
             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
         }
     });
+
+    function SendMail(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test"); // false for synchronous request
+        xmlHttp.send(null);
+    }
 });
