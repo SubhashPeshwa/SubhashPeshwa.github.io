@@ -61,8 +61,19 @@ $(document).ready(function () {
         console.log(document.getElementById("customerRooms").value);
 
 
+        name = document.getElementById("customerName").value;
+        email = document.getElementById("customerEmail").value;
+        mobile = document.getElementById("customerMobile").value;
+        checkin = document.getElementById("customerCheckIn").value;
+        checkout = document.getElementById("customerCheckOut").value;
+        adults = document.getElementById("customerAdults").value;
+        kids = document.getElementById("customerKids").value;
+        rooms = document.getElementById("customerRooms").value;
+
+
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test"); // false for synchronous request
+        //xmlHttp.open("GET", "http://127.0.0.1:8080/mail/test"); // false for synchronous request
         xmlHttp.send(null);
 
     });
