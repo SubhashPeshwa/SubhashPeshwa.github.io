@@ -9,11 +9,19 @@
   -webkit-transition-property: -webkit-transform, all !important;
   transition-property: transform, all !important;
   border-left-width: 0px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 120px !important;
+  background-color: #3c3c3c !important;
   @include media-breakpoint-up(lg) {
     height: 5rem;
   }
   #CollapsingNavbar {
     background-color: #3c3c3c;
+    margin-left: 19% !important;
+    height: 47px !important;
+    margin-top: 12px !important;
+    width: 100%;
   }
   .alpineLogo {
     color: #ef767a;
@@ -81,5 +89,21 @@
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
     border-left-width: 0px !important;
+  }
+  .bookMyStay {
+    color: white;
+    margin-top: 0.9em;
+    margin-right: 1.4em;
+    font-family: lato;
+    font-size: 1em;
+    float: right;
+    background-color: #ef767a;
+    height: 2.7em
+  }
+  a {
+    color: white !important;
+  }
+  .bookMyStayLabel {
+    padding-top: 0.45em;
   }
 }
