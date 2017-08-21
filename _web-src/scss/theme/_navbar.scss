@@ -1,5 +1,6 @@
 // Block: navbar
 .navbar {
+  background: white;
   transition: height .5s;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3) !important;
   -webkit-transform: translate3d(0, 0, 0) !important;
@@ -16,12 +17,6 @@
   @include media-breakpoint-up(lg) {
     height: 5rem;
   }
-  #CollapsingNavbar {
-    background-color: #3c3c3c; //margin-left: 19% !important;
-    height: 47px !important; //margin-top: 5px !important;
-    display: table;
-    margin: 0 auto;
-  }
   ul {
     display: table;
     margin: 0 auto;
@@ -37,8 +32,7 @@
     padding-top: 0px;
     padding-bottom: 0.9em;
     letter-spacing: 10px;
-  }
-  background: white; // Element: navbar-logo
+  } // Element: navbar-logo
   &-logo {
     @extend .theme-font;
     color: #ef767a;
@@ -111,5 +105,34 @@
   }
   .bookMyStayLabel {
     padding-top: 0.45em;
+  }
+  @media only screen and (max-width: 800px) {
+    .navBarItems {
+      width: 30% !important;
+      padding: 0px !important;
+    }
+    .alpineLogo {
+      width: auto;
+      font-size: 1.3em;
+      padding: 0px;
+      margin: 0px;
+      margin-left: 1.5em;
+    }
+    .bookMyStay {
+      padding: 5px;
+      margin: 0px;
+      margin-right: 1em;
+    }
+  }
+  @media only screen and (min-width: 801px) and (max-width: 1200px) {
+    .alpineLogo {
+      font-size: 2.3em;
+    }
+  }
+  .navbarAlpineStyle {
+    background-color: #3c3c3c; //margin-left: 19% !important;
+    height: 47px !important; //margin-top: 5px !important;
+    display: table;
+    margin: 0 auto;
   }
 }

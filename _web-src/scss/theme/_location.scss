@@ -18,6 +18,8 @@
     margin-right: 13.5em;
     letter-spacing: 2px;
     margin-bottom: 0px;
+    display: table;
+    margin: 0 auto;
   }
   .divideline {
     width: 49%;
@@ -147,8 +149,7 @@
       (-webkit-transform-3d) {
         >.item {
           // use your favourite prefixer here
-          transition: 50ms ease-in-out left;
-          //transition: 500ms ease-in-out all;
+          transition: 50ms ease-in-out left; //transition: 500ms ease-in-out all;
           //backface-visibility: visible;
           transform: none!important;
         }

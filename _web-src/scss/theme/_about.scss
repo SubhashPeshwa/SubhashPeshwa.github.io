@@ -136,9 +136,7 @@
     position: relative;
   }
   .galleryLink {
-    position: absolute;
     top: 37%;
-    left: 28%;
     border: solid 2px #3c3c3c;
     color: #3c3c3c;
     font-size: 1.1em;
@@ -148,6 +146,13 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    display: table;
+    margin: 0 auto;
+    margin-top:-50%;
+  }
+  .galleryButton {
+    display: table;
+    margin: 0 auto;
   }
   .titletext {
     font-size: 1.8rem;
@@ -155,9 +160,9 @@
     color: #3c3c3c;
     font-family: Montserrat;
     border-bottom: 1px solid #ef767a;
-    margin-left: 8em;
-    margin-right: 8em;
     letter-spacing: 2px;
+    display: table;
+    margin: 0 auto;
   }
   .mainDescription {
     color: #3c3c3c;
@@ -203,8 +208,8 @@
     font-family: Montserrat;
     border-bottom: 1px solid #ef767a;
     letter-spacing: 2px;
-    padding-left: 2em;
-    padding-right: 2em;
+    display: table;
+    margin: 0 auto;
   }
   .roomTypeImage {
     width: 100%;
