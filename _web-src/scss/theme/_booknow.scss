@@ -1,5 +1,21 @@
 .container-booknow {
     font-family: Lato;
+    .jumbotron {
+        background-color: white;
+        color: #3c3c3c;
+        background-color: white;
+    }
+    .titletext {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #3c3c3c;
+        padding: 0px;
+        font-family: Montserrat;
+        border-bottom: 1px solid #ef767a;
+        margin-left: 12em;
+        margin-right: 12em;
+        letter-spacing: 2px;
+    }
     .page-header {
         //border-bottom: 1px solid #eee;
         border-bottom: 0px;
@@ -11,6 +27,7 @@
     .flowHorizontalImage {
         padding-bottom: 4em;
         padding-top: 2em;
+        width: 100%;
     }
     .flowVerticalImage {
         width: 0px;
@@ -29,7 +46,7 @@
         transition-property: transform, all !important;
         border-left-width: 0px !important;
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 480px) {
         .flowHorizontalImage {
             width: 0px;
             padding: 0px;
@@ -55,14 +72,14 @@
     }
     .center-block {
         padding: 0px;
-        margin-top:1em;
-        box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+        margin-top: 1em;
+        /*box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
         -webkit-transform: translate3d(0, 0, 0) !important;
         transform: translate3d(0, 0, 0) !important;
         -webkit-transition: 0.2s linear !important;
         transition: 0.2s linear !important;
         -webkit-transition-property: -webkit-transform, all !important;
-        transition-property: transform, all !important;
+        transition-property: transform, all !important;*/
         border-left-width: 0px !important;
     }
     .bookingContainer {
@@ -74,5 +91,22 @@
         -webkit-transition-property: -webkit-transform, all !important;
         transition-property: transform, all !important;
         border-left-width: 0px !important;
+    }
+    .bookingProcess {
+        font-size: 1.5em;
+        text-align: center;
+        color: #3c3c3c;
+        font-family: Montserrat;
+        letter-spacing: 2px;
+    }
+    .cancellationProcess {
+        font-size: 1.5em;
+        text-align: center;
+        color: #3c3c3c;
+        font-family: Montserrat;
+        letter-spacing: 2px;
+    }
+    li{
+        font-size: 0.9em;
     }
 }
