@@ -1,5 +1,15 @@
 .container-rules {
     font-family: Lato;
+    .row {
+        background-color: white;
+        padding-top: 0px;
+    }
+    .jumbotron {
+        background-color: white;
+        color: #79AFE8;
+        padding-top: 2em;
+        padding-bottom: 0px;
+    }
     .page-header {
         //border-bottom: 1px solid #eee;
         border-bottom: 0px;
@@ -27,5 +37,20 @@
         -webkit-transition-property: -webkit-transform, all !important;
         transition-property: transform, all !important;
         border-left-width: 0px !important;
+    }
+    .titletext {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #3c3c3c;
+        font-family: Montserrat;
+        border-bottom: 1px solid #ef767a;
+        margin-left: 10em;
+        margin-right: 10em;
+        letter-spacing: 2px;
+    }
+    .ruleBanners {
+        padding: 0px;
+        margin: 0px;
+        padding-right: 14px;
     }
 }

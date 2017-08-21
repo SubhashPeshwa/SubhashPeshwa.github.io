@@ -1,14 +1,12 @@
 // Block: container-about
 .container-about {
   font-family: Lato; //margin-top: $spacer;
-  .slideanim {
-    visibility: hidden;
-  }
   .overlap {
     margin-top: -180px;
   }
-  .carousel-indicators li {
-    visibility: hidden;
+  .row {
+    background-color: white;
+    padding-top: 0px;
   }
   .window {
     height: 300px;
@@ -77,13 +75,6 @@
   .ExteriorImage span {
     background-color: #fc9220;
   }
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
   .glyphicon {
     font-size: 100px;
     padding-bottom: 50px;
@@ -94,6 +85,7 @@
   }
   .jumbotron {
     border-radius: 0px;
+    background-color: white;
   }
   .verticalLine {
     border-left: thick solid #3c3c3c;
@@ -116,6 +108,7 @@
   .amenitiesList {
     padding: 3px;
     font-size: 0.9em;
+    color: #3c3c3c;
   }
   .material-icons {
     float: left;
@@ -131,6 +124,7 @@
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
     border-left-width: 0px !important;
+    margin-top: 2em;
   }
   .secondColumn {
     padding-right: 5px;
@@ -154,5 +148,65 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+  }
+  .titletext {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #3c3c3c;
+    font-family: Montserrat;
+    border-bottom: 1px solid #ef767a;
+    margin-left: 8em;
+    margin-right: 8em;
+    letter-spacing: 2px;
+  }
+  .mainDescription {
+    color: #3c3c3c;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-bottom: 35px;
+    margin-left: 10em;
+    margin-right: 10em;
+    letter-spacing: 1px;
+  }
+  .mainLocation {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #ef767a
+  }
+  .mainLocationText {
+    font-size: 1rem;
+    color: #3c3c3c;
+  }
+  #myCarouselGallery {
+    background-color: white;
+  }
+  .carousel-control {
+    background: none !important;
+  }
+  .glyphicon-chevron-left {
+    font-size: 1.5em;
+  }
+  .glyphicon-chevron-right {
+    font-size: 1.5em;
+  }
+  .roomTypeBox {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #3c3c3c;
+    font-family: 'Lato';
+    margin-top: 1em;
+    letter-spacing: 1px;
+  }
+  .roomTypeText {
+    text-align: center;
+    color: #3c3c3c;
+    font-family: Montserrat;
+    border-bottom: 1px solid #ef767a;
+    letter-spacing: 2px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .roomTypeImage {
+    width: 100%;
   }
 }
