@@ -1,4 +1,24 @@
 .container-location {
+  font-family: Lato;
+  .jumbotron {
+    border-radius: 0px;
+    background-color: white;
+    color: #7a7e82;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px
+  }
+  .titletext {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #3c3c3c;
+    font-family: Montserrat;
+    border-bottom: 1px solid #ef767a;
+    margin-left: 13.5em;
+    margin-right: 13.5em;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
   .divideline {
     width: 49%;
     width: calc(50% - 1px);
@@ -9,25 +29,12 @@
   .feature-icon-container {
     text-align: center;
   }
-  .pinkTheme {
-    background-color: #ef767a;
-  }
   .blackTheme {
     background-color: #3c3c3c;
   }
   .locationCard {
     border-radius: 7px;
     padding: 0px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4) !important;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-    -webkit-transition: 0.2s linear !important;
-    transition: 0.2s linear !important;
-    -webkit-transition-property: -webkit-transform, all !important;
-    transition-property: transform, all !important;
-    border-left-width: 0px !important;
-  }
-  .pinkShadow {
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
@@ -52,10 +59,9 @@
     height: 180px;
   }
   .page-header {
-    //border-bottom: 1px solid #eee;
     border-bottom: 0px;
+    background-color: white;
   }
-  font-family:Lato; //margin-top: $spacer;
   .slideanim {
     visibility: hidden;
   }
@@ -69,15 +75,6 @@
     height: 300px;
     width: 400px;
     text-align: center;
-  }
-  .fixedHeight {
-    height: 250px;
-    margin-top: 1.5em;
-    margin-right: 0.5em;
-    padding: 0px;
-    .fixedHeight i {
-      vertical-align: middle;
-    }
   }
   .page-header {
     //border-bottom: 1px solid #eee;
@@ -93,78 +90,14 @@
       text-align: center;
     }
   }
-  .InteriorImage {
-    background-color: $theme-color-main;
-    background-image: url("/web-dist/images/ExteriorBanner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60vh;
-    text-align: center;
-    width: 100%;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    color: #3c3c3c;
-    font-family: 'Lobster', cursive;
-    font-size: 2.6rem;
-  }
-  .InteriorImage span {
-    background-color: #3c3c3c;
-  }
-  .ExteriorImage {
-    background-color: $theme-color-main;
-    background-image: url("/web-dist/images/InteriorBanner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60vh;
-    text-align: center;
-    width: 100%;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-family: 'Lobster', cursive;
-    color: #3c3c3c;
-    font-size: 2.6rem;
-  }
-  .ExteriorImage span {
-    background-color: #fc9220;
-  }
-  /*.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }*/
   .description {
     color: #3c3c3c;
-  }
-  .jumbotron {
-    border-radius: 0px;
   }
   .verticalLine {
     border-left: thick solid #3c3c3c;
     padding: 20px;
     margin-left: 40px;
     margin-right: 40px;
-  }
-  .roomTypeLogo {
-    float: left;
-    margin-right: 0.6em;
-  }
-  .amenitiesList {
-    padding: 3px;
-  }
-  .material-icons {
-    float: left;
-    font-size: 17px;
-    margin-right: 0.4em;
   }
   .nameTag {
     height: 3.2em;
@@ -186,10 +119,12 @@
     color: white;
     height: 215px;
   }
-  .glyphicon {
-    color: #3c3c3c;
+  .locationCardBottomPadding {
+    height: 0.4em;
+    border-radius: 7px;
   }
   .multi-item-carousel {
+    background-color: white;
     .carousel-inner {
       >.item {
         transition: 500ms ease-in-out left;
@@ -213,8 +148,8 @@
         >.item {
           // use your favourite prefixer here
           transition: 50ms ease-in-out left;
-          transition: 50ms ease-in-out all;
-          backface-visibility: visible;
+          //transition: 500ms ease-in-out all;
+          //backface-visibility: visible;
           transform: none!important;
         }
       }
