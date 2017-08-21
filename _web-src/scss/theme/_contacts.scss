@@ -3,8 +3,7 @@
   margin-top: $spacer;
   min-height: $spacer * 15;
   background: #3c3c3c;
-  padding-top:0px;
-  //background-image: url("/web-dist/images/banners/mobile2.jpg");
+  padding-top: 0px; //background-image: url("/web-dist/images/banners/mobile2.jpg");
   //background-repeat: no-repeat;
   //background-size: cover;
   color: darken($theme-color-main, 50%); // Element: container-contacts-phone
@@ -47,6 +46,8 @@
     transition: 0.2s linear !important;
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
+    color: white;
+    background-color: #3c3c3c;
   }
   .mapFrame {
     width: 100%;
@@ -59,5 +60,35 @@
     transition: 0.2s linear !important;
     -webkit-transition-property: -webkit-transform, all !important;
     transition-property: transform, all !important;
+  }
+  .fa-map-marker {
+    float: left;
+    margin-left: 0.8em;
+    margin-top: 3.2em;
+    font-size: 1.4rem;
+    color: white;
+  }
+  .fa-envelope {
+    margin-left: 1em;
+  }
+  .fa-phone{
+    margin-left:1em;
+  }
+  .getInTouch {
+    margin-left: 1.8em;
+    margin-top: 0.2em;
+    font-size: 43px;
+    font-family: brusher;
+    color: #ef767a;
+  }
+  .address {
+    margin-left: 3.4em;
+    font-size: 13px;
+  }
+  .emailAndPhone {
+    font-size: 13px;
+    color: white;
+    margin-left: 0.6em;
+    margin-top: 2em;
   }
 }
