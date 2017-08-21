@@ -108,42 +108,6 @@
   .lightHeight {
     background-color: #eee;
   }
-  .flip-container {
-    perspective: 1000px;
-  }
-  /* flip the pane when hovered */
-  .flip-container:hover .flipper,
-  .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-  }
-  /*.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
-}*/
-  /* flip speed goes here */
-  .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  /* hide back of pane during swap */
-  .front,
-  .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  /* front pane, placed above back */
-  .front {
-    z-index: 2;
-    /* for firefox 31 */
-    transform: rotateY(0deg);
-  }
-  /* back, initially hidden pane */
-  .back {
-    transform: rotateY(180deg);
-  }
   .roomTypeLogo {
     float: left;
     margin-right: 0.6em;
@@ -157,57 +121,6 @@
     float: left;
     font-size: 20px;
     margin-right: 0.4em;
-  }
-  .bookNowBox {
-    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.4) !important;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-    -webkit-transition: 0.2s linear !important;
-    transition: 0.2s linear !important;
-    -webkit-transition-property: -webkit-transform, all !important;
-    transition-property: transform, all !important;
-    border-left-width: 0px !important;
-    text-align: center;
-    margin-top: -2em;
-    background-color: white;
-    margin-bottom: 3em
-  }
-  .form-control {
-    border-radius: 3px;
-    height: 44px;
-    border-color: white;
-    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-    -webkit-transition: 0.2s linear !important;
-    transition: 0.2s linear !important;
-    -webkit-transition-property: -webkit-transform, all !important;
-    transition-property: transform, all !important;
-    border-left-width: 0px !important;
-  }
-  .input-group-addon {
-    background-color: white !important;
-    border-color: white;
-    border-right-width: 0px !important;
-    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-    -webkit-transition: 0.2s linear !important;
-    transition: 0.2s linear !important;
-    -webkit-transition-property: -webkit-transform, all !important;
-    transition-property: transform, all !important;
-  }
-  .form-group {
-    padding: 1em;
-  }
-  .btn-primary {
-    border-color: #ef767a !important;
-    border-radius: 0px !important;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .control-label {
-    font-size: 0.9em;
   }
   .roomType {
     box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.4) !important;
@@ -241,12 +154,5 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-  }
-  a {
-    color: white !important;
-  }
-  #enquireButton {
-    width: 20%;
-    background-color: #ef767a
   }
 }

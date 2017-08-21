@@ -1,0 +1,64 @@
+.container-bookingBox {
+    font-family: Lato;
+    background-color: white;
+    padding-top:0px;
+    
+    a {
+        color: white !important;
+    }
+    #enquireButton {
+        width: 20%;
+        background-color: #ef767a
+    }
+    .bookNowBox {
+        box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.4) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transition: 0.2s linear !important;
+        transition: 0.2s linear !important;
+        -webkit-transition-property: -webkit-transform, all !important;
+        transition-property: transform, all !important;
+        border-left-width: 0px !important;
+        text-align: center;
+        margin-top: -2em;
+        background-color: white;
+        margin-bottom: 3em
+    }
+    .form-group {
+        padding: 1em;
+    }
+    .control-label {
+        font-size: 0.9em;
+    }
+    .btn-primary {
+        border-color: #ef767a !important;
+        border-radius: 0px !important;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .form-control {
+        border-radius: 3px;
+        height: 44px;
+        border-color: white;
+        box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transition: 0.2s linear !important;
+        transition: 0.2s linear !important;
+        -webkit-transition-property: -webkit-transform, all !important;
+        transition-property: transform, all !important;
+        border-left-width: 0px !important;
+    }
+    .input-group-addon {
+        background-color: white !important;
+        border-color: white;
+        border-right-width: 0px !important;
+        box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transition: 0.2s linear !important;
+        transition: 0.2s linear !important;
+        -webkit-transition-property: -webkit-transform, all !important;
+        transition-property: transform, all !important;
+    }
+}
