@@ -24,6 +24,12 @@
         background-color: white;
         margin-bottom: 3em
     }
+    @media only screen and (max-width: 800px) {
+        .bookNowBox {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+    }
     .form-group {
         padding: 1em;
     }

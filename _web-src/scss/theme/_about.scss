@@ -23,16 +23,6 @@
     //border-bottom: 1px solid #eee;
     border-bottom: 0px;
   }
-  @media only screen and (max-width: 500px) {
-    .overlap {
-      margin-top: -235px;
-    }
-    .window {
-      height: 330px;
-      width: 340px;
-      text-align: center;
-    }
-  }
   .InteriorImage {
     background-color: $theme-color-main;
     background-image: url("/web-dist/images/ExteriorBanner.jpg");
@@ -148,7 +138,7 @@
     padding-bottom: 0.5em;
     display: table;
     margin: 0 auto;
-    margin-top:-50%;
+    margin-top: -50%;
   }
   .galleryButton {
     display: table;
@@ -213,5 +203,24 @@
   }
   .roomTypeImage {
     width: 100%;
+  }
+  @media only screen and (max-width: 800px) {
+    .window {
+      height: 330px;
+      width: 340px;
+      text-align: center;
+    }
+    .galleryLink {
+      margin-top: -80%;
+    }
+    .mainDescription {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .galleryLink {
+      margin-top: -60%;
+    }
   }
 }
