@@ -1,4 +1,16 @@
 // Block: navbar
+.container-fluid {
+  margin-left: 0px;
+  margin-right: -66px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-fluid {
+    margin-left: 0px;
+    margin-right: -50%;
+  }
+}
+
 .navbar {
   background: white;
   transition: height .5s;
