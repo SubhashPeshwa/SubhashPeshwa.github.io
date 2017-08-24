@@ -22,7 +22,8 @@
         text-align: center;
         margin-top: -2em;
         background-color: white;
-        margin-bottom: 3em
+        margin-bottom: 3em;
+        -webkit-appearance: none;
     }
     @media only screen and (max-width: 800px) {
         .bookNowBox {
@@ -54,6 +55,7 @@
         -webkit-transition-property: -webkit-transform, all !important;
         transition-property: transform, all !important;
         border-left-width: 0px !important;
+        -webkit-appearance: none;
     }
     .input-group-addon {
         background-color: white !important;
@@ -66,5 +68,6 @@
         transition: 0.2s linear !important;
         -webkit-transition-property: -webkit-transform, all !important;
         transition-property: transform, all !important;
+        -webkit-appearance: none;
     }
 }
