@@ -71,8 +71,8 @@
   .fa-envelope {
     margin-left: 1em;
   }
-  .fa-phone{
-    margin-left:1em;
+  .fa-phone {
+    margin-left: 1em;
   }
   .getInTouch {
     margin-left: 1.8em;
@@ -90,5 +90,13 @@
     color: white;
     margin-left: 0.6em;
     margin-top: 2em;
+  }
+  @media only screen and (max-width: 800px) {
+    .googleMap {
+      height: 37em;
+    }
+    .mapFrame {
+      height:37em;
+    }
   }
 }
