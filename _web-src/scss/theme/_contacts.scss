@@ -38,7 +38,7 @@
     margin-top: 0.6em;
     margin-left: 0.6em;
     width: 360px;
-    height: 230px;
+    height: 250px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.26) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
@@ -51,7 +51,7 @@
   }
   .mapFrame {
     width: 100%;
-    height: 250px;
+    height: 270px;
     float: right;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.26) !important;
     -webkit-transform: translate3d(0, 0, 0) !important;
@@ -74,6 +74,9 @@
   .fa-phone {
     margin-left: 1em;
   }
+  .fa-compass{
+    margin-left: 1em;
+  }
   .getInTouch {
     margin-left: 1.8em;
     margin-top: 0.2em;
@@ -93,10 +96,10 @@
   }
   @media only screen and (max-width: 800px) {
     .googleMap {
-      height: 37em;
+      height: 39em;
     }
     .mapFrame {
-      height:37em;
+      height:39em;
     }
   }
 }

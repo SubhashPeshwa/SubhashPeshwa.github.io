@@ -126,16 +126,17 @@
     }
     .alpineLogo {
       width: auto;
-      font-size: 2.2em;
+      font-size: 3em;
       padding: 0px;
       margin: 0px;
-      margin-left: 1.5em;
-      margin-top: 1.2em;
+      margin-left: 1.1em;
+      margin-top: 0.9em;
+      letter-spacing: 5px;
     }
     .bookMyStay {
       padding: 5px;
       margin: 0px;
-      margin-right: 0.4em;
+      margin-right: 0.2em;
       margin-top: 2em;
     }
     .navbar-toggler {
@@ -158,11 +159,12 @@
   @media only screen and (max-width: 361px) {
     .alpineLogo {
       width: auto;
-      font-size: 1.7em;
+      font-size: 2.1em;
       padding: 0px;
       margin: 0px;
       margin-top: 1.1em;
       margin-left: 0.9em;
+      letter-spacing: 5px;
     }
     .bookMyStay {
       padding: 5px;
