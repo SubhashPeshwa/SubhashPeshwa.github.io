@@ -51,6 +51,10 @@ $(document).ready(function () {
     });
 
     dom.enquireButton.click(function () {
+
+        isFormValid = false;
+
+        console.log('Inside Submit Function');
         console.log(document.getElementById("customerName").value);
         console.log(document.getElementById("customerEmail").value);
         console.log(document.getElementById("customerMobile").value);
@@ -70,11 +74,64 @@ $(document).ready(function () {
         kids = document.getElementById("customerKids").value;
         rooms = document.getElementById("customerRooms").value;
 
+        alertMessage = [];
 
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test"); // false for synchronous request
-        //xmlHttp.open("GET", "http://127.0.0.1:8080/mail/test"); // false for synchronous request
-        xmlHttp.send(null);
+        if (name.length === 0) {
+            alertMessage.push("Please enter a valid name");
+        }
+        if (email.length === 0) {
+            alertMessage.push("Please enter a valid email iD");
+        }
+        if (mobile.length === 0) {
+            alertMessage.push("Please enter a valid mobile number");
+        }
+        if (checkin.length === 0) {
+            alertMessage.push("Please enter your check-in date");
+        }
+        if (checkout.length === 0) {
+            alertMessage.push("Please enter your check-out date");
+        }
+        if (adults.length === 0) {
+            alertMessage.push("Please specify the number of adults needing accommodation");
+        }
+        if (kids.length === 0) {
+            alertMessage.push("Please specify the number of kids needing accommodation");
+        }
+        var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(regEmail.test(email) == false){
+            alertMessage.push("Please enter a valid email id");
+        }
+        if(mobile.length != 10){
+            alertMessage.push("Please enter a valid 10 digit mobile number");
+        }
+        if(checkin >= checkout){
+            alertMessage.push("Checkout date should be after the checkin date");
+        }
+        /*var todayDate = new Date();
+        todayDate = todayDate.getDate - 1;
+        console.log(todayDate.toISOString().slice(0,10));
+        if(checkin < todayDate || checkout < todayDate){
+            alertMessage.push("Checkin/Checkout date should be after the current date");
+        }*/
+
+
+        alertText = "";
+
+        if (alertMessage.length > 0) {
+            for (i = 0; i < alertMessage.length; i++) {
+                alertText = alertText + '\n\r' + (i + 1).toString() + '.\xa0' + alertMessage[i];
+            }
+            alert(alertText);
+        } else {
+            isFormValid = true;
+        }
+
+        if (isFormValid) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test"); // false for synchronous request
+            //xmlHttp.open("GET", "http://127.0.0.1:8080/mail/test"); // false for synchronous request
+            xmlHttp.send(null);
+        }
 
     });
 
