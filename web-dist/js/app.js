@@ -129,7 +129,7 @@ $(document).ready(function () {
         if (isFormValid) {
             alert("Thank-you for opting to stay with us!\xa0 A confirmation mail has been sent to " +email+ ".\xa0 We will get in touch with you shortly with details on availability.");
             var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test?name={0}&email={1}&mobile={2}&checkin={3}&checkout ={4}&kids={5}&rooms={6}".format(name,email,mobile,checkin,checkout,kids,rooms)); // false for synchronous request
+            xmlHttp.open("GET", "http://35.198.212.244:8080/mail/test?name={0}&email={1}&mobile={2}&checkin={3}&checkout={4}&kids={5}&rooms={6}".format(name,email,mobile,checkin,checkout,kids,rooms)); // false for synchronous request
             //xmlHttp.open("GET", "http://127.0.0.1:8080/mail/test"); // false for synchronous request
             xmlHttp.send(null);
         }
