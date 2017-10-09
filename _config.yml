@@ -5,9 +5,9 @@ email: rashim.dhir@gmail.com
 brand: Alpine Homes 
 headline: Bed and Breakfast
 description: > # this means to ignore newlines until "baseurl:"
-  New Site
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+  Our 2 Alpine Suites and 3 Delux Rooms offer the romance and beauty of Shimla, also kown as Queen of hills. Alpine Homes provides an unforgettable experience of the hill station lifestyle which is ideal and perfect choice for friends, families and couples to relax. Unwind the historical beauty of Shimla by visiting The Mall Road, Scandal Point and Vice Regal Lodge. Also,find yourselves submerged in serenity and peace,surrounded by greenery of Deodar,Pine forests and magnificient snowfall.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://alpinehomes-bnb.com" # the base hostname & protocol for your site
 copyright: 2017 Alpine Homes, Inc. All Rights Reserved.
 
 # Build settings
